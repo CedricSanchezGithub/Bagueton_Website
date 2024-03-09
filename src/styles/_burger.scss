@@ -1,0 +1,146 @@
+// Container du burger
+.burger-container {
+  position: fixed; // Fixed, afin qu'il reste toujours au même endroit
+  z-index: 100; // Pour rester toujours au dessus des élements
+  right: 20px;
+  top: 30px;
+  width: 60px;
+  height: 40px;
+  display: flex; // Afin de centrer le burger dans son container
+  justify-content: center;
+  align-items: center;
+  @media (width > 700px) {
+    display: none; // Disparait en grand format
+  }
+}
+
+.burger {
+  position: relative;
+  width: 60%;
+  height: 60%;
+}
+
+// Première slice du burger
+.burger-slice-1 {
+  position: absolute;
+  top: 0; // Place la slice en haut
+  width: 100%;
+  height: 3px;
+  background: var$color1;
+  border-radius: 10px;
+  transition: top 0.5s ease;
+  animation: slice-1-out 0.5s linear; // L'animation se lance au chargement de la page, ainsi que lorsque la classe active est remove
+  transform: translate(0, -50%);
+}
+
+// Seconde slice du burger. Pas d'animation, disparait au toggle
+.burger-slice-2 {
+  position: absolute;
+  top: 50%; // Place la slice au centre
+  width: 100%;
+  height: 3px;
+  transform: translate(0, -50%);
+  background: #47331f;
+  border-radius: 10px;
+  transition: all 0.5s linear;
+  opacity: 1;
+}
+
+// Troisème slice du burger
+.burger-slice-3 {
+  position: absolute;
+  top: 100%; // Place la slice en bas
+  width: 100%;
+  height: 3px;
+  background: #47331f;
+  border-radius: 10px;
+  transition: bottom 0.5s ease;
+  transform: translate(0, -50%);
+  animation: slice-3-out 0.5s linear; // L'animation se lance au chargement de la page, ainsi que lorsque la classe active est remove
+}
+
+// Classes injecté en js lors du clic sur le burger
+.burger-slice-1-active {
+  top: 50%; // La slice vient se placer au centre
+  transform: translate(0, -50%) rotate(-45deg); // Puis fait une rotation de -45deg
+  animation: slice-1-in 0.5s linear forwards; // Lance l'animation afin de donner une impression de mouvement
+}
+
+.burger-slice-2-active {
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+.burger-slice-3-active {
+  top: 50%; // La slice vient se placer au centre
+  transform: translate(0, -50%) rotate(45deg); // Puis fait une rotation de 45deg
+  animation: slice-3-In 0.5s linear forwards; // Lance l'animation afin de donner une impression de mouvement
+}
+
+// Première partie de l'animation: démarre à top 0%
+@keyframes slice-1-in {
+  0% {
+    top: 0%;
+    transform: translate(0, -50%);
+  }
+  // Seconde partie de l'animation: au milieux de l'animation, la barre est à l'horizontal et au centre.
+
+  50% {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  // Dernière partie de l'animation, la barre étant déjà au centre, elle fait une rotation de -45deg. Fin de l'animation.
+  100% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(-45deg);
+  }
+}
+
+// Animation de retour:
+@keyframes slice-1-out {
+  0% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(-45deg);
+  }
+  50% {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    top: 0%;
+    transform: translate(0, -50%);
+  }
+}
+
+@keyframes slice-3-In {
+  0% {
+    top: 100%;
+    transform: translate(0, -50%);
+  }
+
+  50% {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(45deg);
+  }
+}
+@keyframes slice-3-out {
+  0% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(45deg);
+  }
+
+  50% {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    top: 100%;
+    transform: rotate(0deg);
+  }
+}
