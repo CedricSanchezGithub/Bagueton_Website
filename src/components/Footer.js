@@ -1,5 +1,5 @@
 import React from 'react'
-import logoADRAR from './img/logo01_APN_B.png'
+import logoADRAR from '../img/logo01_APN_B.png'
 
 export default function Footer() {
     return (

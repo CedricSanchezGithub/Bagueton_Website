@@ -1,7 +1,7 @@
 import React from 'react'
-import img1 from './img/img1.svg'
-import './styles/output.css';
-import Nav from './components/Nav';
+import img1 from '../img/img1.svg'
+import '../styles/output.css';
+import Nav from './Nav';
 import Section from './Section';
 
 export default function Header() {
