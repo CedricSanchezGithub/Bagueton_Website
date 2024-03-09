@@ -12,3 +12,6 @@ Il s'agit d'un site web vitrine développé avec React.
 - **SASS** : Préprocesseur CSS utilisé conjointement à Tailwind afin de personnaliser certains effets.
 - **Visual Studio Code** : Éditeur de code utilisé avec ses puissantes extensions.
 - **Figma** : Outil de prototypage utilisé pour faire la maquette du site.
+
+
+![2024-03-09_20-21](https://github.com/CedricSanchezGithub/bagueton_website/assets/129597649/9d868d5e-936a-4f41-b78f-8214ec9f6b9a)
