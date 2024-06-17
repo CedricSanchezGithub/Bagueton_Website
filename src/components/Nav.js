@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function Nav() {
     return (
-        <div className='navigation'>
+        <div className='navigation' style={{height: "30%"}}>
             <nav>
                 <div className="logo flex justify-center pt-5 ">
                     <img src={logo} alt="logo bagueton" />

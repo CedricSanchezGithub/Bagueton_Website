@@ -12,7 +12,6 @@ export default function App() {
 
   useEffect(() => {
     AOS.init({
-      // options ici
       duration: 1000,
     });
   }, []);

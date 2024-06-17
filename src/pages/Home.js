@@ -7,6 +7,7 @@ import img4 from '../img/img4.svg'
 import img5 from '../img/img5.svg'
 import playstore from '../img/playstore.svg'
 import Footer from '../components/Footer'
+import img1 from "../img/img1.svg";
 
 
 export default function Home() {
@@ -14,6 +15,22 @@ export default function Home() {
     <div>
         
         <Header />
+        <Section
+            background={`bg-[#FFF5E8]`}
+            height={`h-2/3`}
+            text={
+                <div className="text-orange-950 items-center w-3/4 mx-auto bg-[#FFF5E8]">
+                    <h1 className="font-bold">Bagueton</h1>
+                    <p className="font-semibold">
+                        Une application <span className="text-red-500">intuitive</span>, pour
+                        tout artisants boulangers, pâtissiers, chocolatiers... Soucieux de
+                        gagner en <span className="text-red-500">productivité</span>.
+                    </p>
+                </div>
+            }
+            imagePath={img1}
+            altText={"Mockup"}
+        />
       <Section
         height={`h-screen`}
         background={`bg-[#EBD5B8]`}
