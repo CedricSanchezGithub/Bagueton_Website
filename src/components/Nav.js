@@ -34,8 +34,8 @@ export default function Nav() {
                                 <details>
                                     <summary>Documentation</summary>
                                     <ul className=" bg-transparent">
-                                        <li><NavLink to='/documentation' className={"hover:bg-[#EBD5B8] p-5 py-3 rounded-lg"}>Submenu 1</NavLink></li>
-                                        <li><NavLink to='/documentation' className={"hover:bg-[#EBD5B8] p-5 py-3 rounded-lg"}>Submenu 2</NavLink></li>
+                                        <li><NavLink to='/documentation' className={"hover:bg-[#EBD5B8] p-5 py-3 rounded-lg"}>Documentation I</NavLink></li>
+                                        <li><NavLink to='/documentation' className={"hover:bg-[#EBD5B8] p-5 py-3 rounded-lg"}>Documentation II</NavLink></li>
                                     </ul>
                                 </details>
                             </li>

@@ -13,11 +13,10 @@ import img1 from "../img/img1.svg";
 export default function Home() {
   return (
     <div>
-        
+        <div className={"h-screen bg-[#FFF5E8]"}>
         <Header />
         <Section
             background={`bg-[#FFF5E8]`}
-            height={`h-2/3`}
             text={
                 <div className="text-orange-950 items-center w-3/4 mx-auto bg-[#FFF5E8]">
                     <h1 className="font-bold">Bagueton</h1>
@@ -31,6 +30,7 @@ export default function Home() {
             imagePath={img1}
             altText={"Mockup"}
         />
+        </div>
       <Section
         height={`h-screen`}
         background={`bg-[#EBD5B8]`}

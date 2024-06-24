@@ -1,12 +1,13 @@
 import React from 'react';
+import Header from "./Header";
+import Footer from "./Footer";
 
-export default function Article({ text, imagePath, altText, background, height }) {
+export default function Article({ text, background, height }) {
     return (
-        <div className={`section flex ${background} ${height}`}>
-            <p>
-                <img src={imagePath} alt={altText} className="w-md" data-aos="zoom-out-left"/>
-                {text}
-            </p>
+        <div className={`article ${background} ${height} bg-[#FFF5E8] flex flex-col justify-between`} style={{ minHeight: '100vh' }}>
+            <Header />
+            {text}
+            <Footer />
         </div>
     );
 }
