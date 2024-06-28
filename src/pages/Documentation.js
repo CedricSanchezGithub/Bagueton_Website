@@ -16,9 +16,9 @@ export default function Documentation() {
                         <br/>
                         <br/>
                         <h2>- Documents :</h2><br/>
-                        <a><i class="fa-solid fa-download" style={{ padding: "0 10px 0 0"}}></i> Mémoire Bagueton.doc</a> <br/>
-                        <a><i class="fa-solid fa-download" style={{ padding: "0 10px 0 0"}}></i> Présentation.pdf</a> <br/>
-                        <a><i class="fa-solid fa-download" style={{ padding: "0 10px 0 0"}}></i> Dossier professionnel.doc</a>
+                        <a href={"../documents/Dossier_projet_Cedric_Sanchez.docx"}><i className="fa-solid fa-download" style={{ padding: "0 10px 0 0"}}></i> Mémoire Bagueton.doc</a> <br/>
+                        <a href={"../documents/Dossier_Professionnel_Cedric_Sanchez.docx"}><i className="fa-solid fa-download" style={{ padding: "0 10px 0 0"}}></i> Présentation.pdf</a> <br/>
+                        <a href={"../documents/Dossier_Professionnel_Cedric_Sanchez.docx"}><i className="fa-solid fa-download" style={{ padding: "0 10px 0 0"}}></i> Dossier professionnel.doc</a>
                         <br/>
                         <br/>
                         <h2>- Github :</h2><br/>

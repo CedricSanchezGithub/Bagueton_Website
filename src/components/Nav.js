@@ -40,6 +40,7 @@ export default function Nav() {
                                 </details>
                             </li>
                             <li><NavLink to='/about' className={"hover:bg-[#EBD5B8] m-10 p-5 py-3 rounded-lg"}>A propos</NavLink></li>
+                            <li><NavLink to='/login' className={"hover:bg-[#EBD5B8] m-10 p-5 py-3 rounded-lg"}>Login</NavLink></li>
                         </ul>
                     </div>
                     <div className="navbar-end">

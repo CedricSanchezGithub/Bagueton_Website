@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 import Home from './pages/Home';
 import Documentation from './pages/Documentation'
 import About from './pages/About';
+import Login from "./pages/Login";
 
 export default function App() {
 
@@ -23,6 +24,7 @@ export default function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/documentation' element={<Documentation />}/>
         <Route path='/about' element={<About />}/>
+        <Route path='/login' element={<Login />}/>
       </Routes>
       </BrowserRouter>
     </div>
